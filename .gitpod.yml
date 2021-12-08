@@ -1,0 +1,16 @@
+image: gitpod/workspace-full
+
+tasks:
+  - name: Terminal
+  - name: Docker
+    init: make build && docker-compose --no-start --build
+    command: make up
+    openMode: split-right
+    
+ports:
+  - port: 4326
+    onOpen: ignore
+  - port: 7755
+    onOpen: open-preview
+  - port: 8055
+    onOpen: ignore

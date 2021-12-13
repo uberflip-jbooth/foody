@@ -3,7 +3,7 @@ image: gitpod/workspace-full
 tasks:
   - name: Terminal
   - name: Docker
-    init: make build && docker-compose --no-start --build
+    init: make build && docker-compose up --no-start --build
     command: make up
     openMode: split-right
     

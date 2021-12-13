@@ -8,9 +8,11 @@ tasks:
     openMode: split-right
     
 ports:
-  - port: 4326
+  - port: 4312
     onOpen: ignore
   - port: 7755
     onOpen: open-preview
   - port: 8055
+    onOpen: ignore
+  - port: 5530
     onOpen: ignore

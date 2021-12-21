@@ -34,6 +34,9 @@ services:
   public-api:
     image: foody-public-api:latest
     command: "httpd -D FOREGROUND"
+    environment:
+      - REACT_URL=${REACT_URL}
+      - LARAVEL_URL=${LARAVEL_URL}
     volumes:
       - ./public-api:/app/
     ports:
@@ -46,6 +49,8 @@ services:
   web-ui:
     image: foody-web-ui:latest
     command: "npm start"
+    environment:
+      - LARAVEL_URL=${LARAVEL_URL}
     volumes:
       - ./web-ui:/app/
     ports:

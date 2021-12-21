@@ -19,6 +19,6 @@ ports:
     onOpen: ignore
   - port: 7755 # public-api: Laravel
     onOpen: open-preview
-    visibility: public
   - port: 8055 # web-ui: React
     onOpen: ignore
+    visibility: public

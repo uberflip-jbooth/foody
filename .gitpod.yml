@@ -4,9 +4,7 @@ tasks:
   - name: Terminal
   - name: Docker
     before: |
-      export NEST_URL=$(gp url 5530)
       export LARAVEL_URL=$(gp url 8055)
-      export REACT_URL=$(gp url 7755)
       chmod 777 public-api/storage/framework/cache/data
     init: make build && docker-compose up --no-start --build
     command: make up

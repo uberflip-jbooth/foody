@@ -1,5 +1,5 @@
 deps:
-	composer install --no-suggest
+	composer install && composer update
 .PHONY: deps
 
 test:

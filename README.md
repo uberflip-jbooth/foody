@@ -7,7 +7,7 @@ Foody is a simple web application built to help developer candidates demonstrate
 * [Git](https://git-scm.com/)
 * [Docker](https://www.docker.com/)
 * [MySQL 8](https://www.mysql.com/)
-* [PHP 7](https://php.net/)
+* [PHP 8](https://php.net/)
 * [TypeScript](https://www.typescriptlang.org/)
 * [Composer](https://getcomposer.org/)
 * [npm](https://www.npmjs.com/)

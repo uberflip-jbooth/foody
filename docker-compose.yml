@@ -9,6 +9,8 @@ services:
     volumes:
       - ./database/schema.sql:/docker-entrypoint-initdb.d/1.schema.sql
       - ./database/content.sql:/docker-entrypoint-initdb.d/2.content.sql
+    cap_add:
+      - SYS_NICE
     ports:
       - 4312:3306
     networks:

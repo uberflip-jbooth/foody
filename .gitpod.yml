@@ -5,7 +5,6 @@ tasks:
   - name: Docker
     before: |
       export LARAVEL_URL=$(gp url 8055)
-      chmod 777 public-api/storage/framework/cache/data
     init: make build && docker-compose up --no-start --build
     command: make up
     openMode: split-right

@@ -14,8 +14,8 @@ ports:
     onOpen: ignore
   - port: 5530 # private-api: Nest.js
     onOpen: ignore
-  - port: 7755 # public-api: Laravel
+  - port: 7755 # web-ui: React
     onOpen: open-preview
-  - port: 8055 # web-ui: React
+  - port: 8055 # public-api: Laravel
     onOpen: ignore
     visibility: public
